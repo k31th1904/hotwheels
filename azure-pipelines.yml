@@ -14,7 +14,8 @@ variables:
   imageRepository: 'db'
   containerRegistry: 'ccgc5368.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/db/build/Dockerfile'
-  tag: '$(Build.BuildId)'
+  #tag: '$(Build.BuildId)'
+  tag: 'v2'
 
 
 
@@ -27,21 +28,6 @@ stages:
     pool: Default
     steps:
     
-    - task: Bash@3
-      inputs:
-        targetType: 'inline'
-        script: |
-          # Write your commands here
-          
-          echo [*]Pulling Source code
-          
-          echo $(Build.SourcesDirectory)
-          cd $(Build.SourcesDirectory)
-          git pull https://github.com/k31th1904/hotwheels.git
-          ls -l
-          pwd
-          ls -l $(dockerfilePath)
-          whoami
 
     - task: Docker@2
       displayName: Build and push an image to container registry
