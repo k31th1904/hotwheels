@@ -41,6 +41,7 @@ stages:
           git pull https://github.com/k31th1904/hotwheels.git
           ls -l
           pwd
+          ls -l $(dockerfilePath)
 
     - task: Docker@2
       displayName: Build and push an image to container registry
