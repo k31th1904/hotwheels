@@ -13,11 +13,10 @@ variables:
   dockerRegistryServiceConnection: '19880d1d-70c3-4fd5-8d67-bbce2beabdd0'
   imageRepository: 'db'
   containerRegistry: 'ccgc5368.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/backend/build/Dockerfile'
+  dockerfilePath: '$(Build.SourcesDirectory)/db/build/Dockerfile'
   tag: '$(Build.BuildId)'
 
-  # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+
 
 stages:
 - stage: Build
