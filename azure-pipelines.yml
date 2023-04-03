@@ -1,0 +1,22 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool: Default
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+
+- task: DockerCompose@0
+  inputs:
+    containerregistrytype: 'Azure Container Registry'
+    azureSubscription: 'MusicMate(c207b113-8d0f-4fef-a892-47b962032477)'
+    azureContainerRegistry: '{"loginServer":"ccgc5368.azurecr.io", "id" : "/subscriptions/c207b113-8d0f-4fef-a892-47b962032477/resourceGroups/CICD_RG_EA/providers/Microsoft.ContainerRegistry/registries/ccgc5368"}'
+    dockerComposeFile: '**/docker-compose.yml'
+    action: 'Build services'
