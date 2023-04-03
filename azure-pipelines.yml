@@ -63,6 +63,5 @@ stages:
           
           echo $(Build.SourcesDirectory)
           cd $(Build.SourcesDirectory)
-          rm -rf *
+          #rm -rf *
           ls -l
-          
