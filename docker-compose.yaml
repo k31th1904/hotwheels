@@ -1,0 +1,23 @@
+version: '3'
+services:
+  frontend:
+    build: ./frontend/build
+    image: ccgc5368.azurecr.io/react:v1
+    container_name: frontapp
+    ports:
+        - "3000:3000"
+
+  backend:
+    build: ./backend/build
+    image: ccgc5368.azurecr.io/python:v1
+    container_name: backapp
+    ports:
+        - "8000:8000"
+
+  db:
+    build: ./db/build
+    image: ccgc5368.azurecr.io/db:v1
+    container_name: db
+    ports:
+        - "3306:3306"
+
