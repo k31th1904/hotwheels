@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: frontend-container
-        image: ccgc5368.azurecr.io/react:v1
+        image: ccgc5368.azurecr.io/react:v2
         imagePullPolicy: Always            
         ports:
         - name: frontend
