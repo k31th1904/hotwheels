@@ -18,7 +18,8 @@ INSERT INTO cars VALUES
 (DEFAULT,"BNR32 Skyline GT-R","1994","Nissan","Coupe"),
 (DEFAULT,"A80 Supra MK-IV","1997","Toyota","Coupe"),
 (DEFAULT,"CP9A Lancer Evo V","1999","Mitsubishi","Sedan"),
-(DEFAULT,"FD3S efini RX7","1997","Mazda","Coupe")
+(DEFAULT,"FD3S efini RX7","1997","Mazda","Coupe"),
+(DEFAULT,"AE86 Sprinter Trueno","1987","Toyota","Coupe")
 ;
 
 
