@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: mysql
-          image: ccgc5368.azurecr.io/db:v1
+          image: ccgc5368.azurecr.io/db:v2
           env:
             - name: MYSQL_ROOT_PASSWORD
               value: root
