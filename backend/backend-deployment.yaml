@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: backend-container
-        image: ccgc5368.azurecr.io/python:v1
+        image: ccgc5368.azurecr.io/python:v2
         imagePullPolicy: Always            
         ports:
         - name: backend
