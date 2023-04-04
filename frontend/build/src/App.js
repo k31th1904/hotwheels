@@ -34,7 +34,7 @@ function App() {
         { hostdata &&
                 <h2 className="text-primary" > {hostdata.hostname} </h2>
         }
-        <p>{currentHost}</p>
+        <h2>{currentHost}</h2>
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<CarListing />}></Route>

@@ -1,8 +1,7 @@
-apiVersion: autoscaling/v2beta2
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: backend-hpa
-  namespace: default
 spec:
   maxReplicas: 2
   minReplicas: 1
@@ -17,3 +16,6 @@ spec:
       target:
         type: Utilization
         averageUtilization: 60
+  behavior:
+    scaleDown:
+      stabilizationWindowSeconds: 120
