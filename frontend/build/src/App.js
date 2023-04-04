@@ -11,6 +11,7 @@ import CarEdit from './CarEdit'
 
 function App() {
 
+    const currentHost = `${window.location.protocol}//${window.location.hostname}`;
     const[hostdata,hostdatachange]=useState("");
 
     useEffect(()=>{
@@ -31,8 +32,9 @@ function App() {
         <h1> HotWheels Collection List </h1>
         <br></br>
         { hostdata &&
-                <h1 className="text-primary" > {hostdata.hostname} </h1>
+                <h2 className="text-primary" > {hostdata.hostname} </h2>
         }
+        <p>{currentHost}</p>
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<CarListing />}></Route>
