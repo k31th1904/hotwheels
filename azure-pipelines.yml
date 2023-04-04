@@ -64,10 +64,11 @@ stages:
         tags: |
           $(tag)
 
-          - task: Bash@3
-            inputs:
-              targetType: 'inline'
-              script: |
-                # Write your commands here
-                
-                echo $(containerRegistry)
+    - task: Bash@3
+      inputs:
+        x: $(containerRegistry)
+        targetType: 'inline'
+        script: |
+          # Write your commands here
+          echo $(x)      
+          echo $(containerRegistry)
