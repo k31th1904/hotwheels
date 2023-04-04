@@ -10,14 +10,16 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
+  
   dockerRegistryServiceConnection: '19880d1d-70c3-4fd5-8d67-bbce2beabdd0'
   containerRegistry: '$(RegistryName)'
-  ftrepository: '$(frontend)'
-  bkrepository: '$(backend)'
-  dbrepository: '$(database)'
+  ftrepository: 'react'
+  bkrepository: 'python'
+  dbrepository: 'db'
   ftdockerfilePath: '$(Build.SourcesDirectory)/frontend/build/Dockerfile'
   bkdockerfilePath: '$(Build.SourcesDirectory)/backend/build/Dockerfile'
   dbdockerfilePath: '$(Build.SourcesDirectory)/db/build/Dockerfile'
+
   #tag: '$(Build.BuildId)'
 
 
