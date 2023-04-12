@@ -144,4 +144,4 @@ CORS_ORIGIN_ALLOW_ALL=True
 
 
 # custom configuration
-LoadBalance = False
+LoadBalance = True
