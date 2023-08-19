@@ -1,7 +1,11 @@
+Project: Kubernetes on Azure Cloud with Pipeline 
 
-Push based CICD Pipeline with Azure DevOps for multi-containers app in Azure Kubernetes Service (AKS)
+3-tier Python Webapp with Azure DevOps and Azure Kubernetes Service (AKS) using push based CICD pipeline
+
 Frontend : React 
-Backend : Python with Django + REST API 
+Backend : Python - Django REST API 
 Database : MYSQL
 
+K8S Components: Deployment, Service, HPA, StatfulSet, PV, PVC
 
+Azure Components: Azure DevOps, AKS
