@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
         <br></br>
-        <h1> HotWheels Collection List </h1>
+        <h1> HotWheels Toy Cars Collection List </h1>
         <br></br>
         { hostdata &&
                 <h2 className="text-primary" > {hostdata.hostname} </h2>
